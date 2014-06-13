@@ -1,0 +1,10 @@
+apply from: rootProject.file("${bnd_cnf}/gradle/master.gradle")
+
+task dist() << {
+    delete "release"
+
+    ant.taskdef(name: 'bndrelease', classname: 'aQute.bnd.ant.RunconfigToDistributionTask', classpath: 'cnf/gradle/dependencies/biz.aQute.bnd.jar')
+    ant.bndrelease(allowsnapshots: true, bndfile: 'run/demo.bndrun', rootdir: './', outputdir: 'release')   
+
+    delete fileTree(dir: 'release', includes: ['org.apache.felix.gogo*', 'org.apache.felix.fileinstall*', 'org.apache.felix.log*'])
+}

@@ -1,0 +1,15 @@
+Bundle-Version: 0.0.0.${tstamp}
+-buildpath: \
+	webshop.products.api;version=latest,\
+	org.mongodb.mongo-java-driver,\
+	org.amdatu.mongo,\
+	com.fasterxml.jackson.core.jackson-core;version='[2.3.1,2.3.1]',\
+	com.fasterxml.jackson.core.jackson-databind;version='[2.3.1,2.3.1]',\
+	com.fasterxml.jackson.core.jackson-annotations;version='[2.3.0,2.3.0]',\
+	org.mongojack;version=2.1.0.SNAPSHOT,\
+	org.apache.felix.dependencymanager,\
+	osgi.core,\
+	../cnf/plugins/org.apache.felix.dependencymanager.annotation-3.1.1-SNAPSHOT.jar;version=file
+Private-Package:  \
+	webshop.products.mongo
+Bundle-Activator: webshop.products.mongo.Activator

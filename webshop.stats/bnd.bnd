@@ -1,0 +1,9 @@
+Bundle-Version: 1.0.0.${tstamp}
+-buildpath: \
+	org.apache.felix.dependencymanager,\
+	osgi.core,\
+	org.amdatu.scheduling.api,\
+	org.amdatu.scheduling.quartz,\
+	../cnf/plugins/org.apache.felix.dependencymanager.annotation-3.1.1-SNAPSHOT.jar;version=file
+Private-Package:  \
+	webshop.stats

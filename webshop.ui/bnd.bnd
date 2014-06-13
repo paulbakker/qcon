@@ -1,0 +1,4 @@
+Bundle-Version: 0.0.0.${tstamp}
+Include-Resource: static=static
+X-Web-Resource-Version: 1.1
+X-Web-Resource: /webshop;static
